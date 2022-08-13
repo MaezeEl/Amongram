@@ -1,0 +1,203 @@
+*{ 
+   font-family: fira Sans;
+}
+
+*::selection{ 
+      color: white;
+      background: #8B34C8;
+}
+
+html{ 
+   background-color: #1E1E1E;
+}
+
+body{ 
+   margin: 0;
+}
+
+header{ 
+   position: fixed;
+   display: flex;
+   width: 100%;
+   min-height: 5em;
+   background-color: black;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0.5em;
+   border: 0.15em solid #414141;
+   box-sizing: content-box;
+}
+
+#logo{ 
+   display: flex;
+   align-items: center;
+}
+
+#logo img{ 
+   height: 3.5em;
+   margin: 0.5em;
+   border-radius: 2em;
+   border: 0.20em solid #272727;
+   box-sizing: content-box;
+   transition: all 0.5s;
+}
+
+#logo img:hover{ 
+   border-radius: 2em;
+   border: 0.20em solid #4E0A44;
+}
+
+#logo h2{ 
+   padding-left: 0.5em;
+   color: #272727;
+   font-size: 2em;
+   transition: all 1s;
+}
+
+#logo h2:hover{ 
+   filter: invert(7%) sepia(98%) saturate(2954%) hue-rotate(295deg) brightness(93%) contrast(100%);
+}
+
+nav{ 
+	padding-right: 4em;
+	padding-left: 13em;
+}
+
+nav a{
+   padding-right: 1em;
+   transition: all 1s;
+}
+
+#cuenta{
+   width: 2.5em;
+
+}
+
+nav a:hover{ 
+	filter: invert(7%) sepia(98%) saturate(2954%) hue-rotate(295deg) brightness(93%) contrast(100%);
+}
+
+div{ 
+   width: 50%;
+   padding-left: 1em;
+   padding-right: 1em;
+}
+
+div input{ 
+	position: relative;
+	left: 7.5em;
+	height: 2.5em;
+    width: 90%;
+    font-size: 1em;
+    background: #272727;
+    outline: none;
+    border-radius: 0.5em;
+    border: none;
+    padding-left: 1em ;
+    color: white;
+    transition: border 0.5s, border-radius 0.5s;
+}
+
+div input:hover{ 
+   border-radius: 0.7em;
+   border: 0.2em solid #4E0A44;
+}
+ 
+a{ 
+   text-decoration: none;
+}
+
+#historia{ 
+   display: flex;
+   width: 35%;
+   height: 5em;
+   background-color: black;
+   align-items: center;
+   padding: 0.5em;
+   border: 0.15em solid #414141;
+   box-sizing: content-box;
+   border-radius: 0.5em;
+   overflow-y: hidden;
+   overflow-x: scroll;
+}
+#historia::-webkit-scrollbar {
+	background-color: none;
+	border-radius: 1em;
+	height: 0.5em;
+
+}
+
+#historia::-webkit-scrollbar-thumb {
+	background-color: #303030;
+	border-radius: 1em;
+	height: 0.5em;
+}
+
+#historia img{ 
+	align-items: center;
+	width: 4em;
+   border-radius: 2em;
+   border: 0.20em solid #272727;
+   box-sizing: content-box;
+}
+
+#historia a{ 
+	padding-right: 2em; 
+}
+
+#primera-historia{ 
+	padding-left: 1em; 
+}
+
+iframe{ 
+	border: 1em solid #414141; 
+	border-radius: 1em;
+	transition: all 1s;
+}
+
+iframe:hover{ 
+	border: 1em solid #4E0A44; 
+	border-radius: 1em;
+}
+   
+@media (max-width: 950px){ 
+
+   header{ 
+   flex-direction: column;
+}
+
+nav{ 
+   padding: 0.5em 0em;
+}
+
+div input{ 
+   width: 90% ;
+   position: relative;
+   left: 0;
+}
+
+nav a{ 
+   font-size: 100%;
+}
+
+#historia{ 
+   width: 70%;
+   position: relative;
+   top: 5em;
+}
+
+
+#historia img{ 
+	align-items: center;
+   width: 3em;
+   border-radius: 2em;
+   border: 0.20em solid #272727;
+   box-sizing: content-box;
+}
+
+iframe{ 
+	width: 70%;
+}
+
+}
+  
